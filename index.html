@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header>
+            <div>
+                <h1>🌤️ Weather Dashboard</h1>
+                <p>Real-time weather information</p>
+            </div>
+
+            <button id="locationBtn">📍 My Location</button>
+        </header>
+
+        <section class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+            >
+            <button id="searchBtn">🔍 Search</button>
+        </section>
+
+        <p id="error"></p>
+
+        <main id="weatherContent" class="hidden">
+
+            <section class="current-weather">
+
+                <div class="location">
+                    <h2 id="cityName">Chennai</h2>
+                    <p id="date"></p>
+                </div>
+
+                <div class="temperature">
+                    <span id="weatherIcon">☀️</span>
+                    <strong id="temperature">--°C</strong>
+                    <p id="condition">Clear Sky</p>
+                </div>
+
+                <div class="details">
+
+                    <div class="detail-card">
+                        <span>💧</span>
+                        <h3 id="humidity">--%</h3>
+                        <p>Humidity</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <span>💨</span>
+                        <h3 id="wind">-- km/h</h3>
+                        <p>Wind Speed</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <span>🌡️</span>
+                        <h3 id="feels">--°C</h3>
+                        <p>Feels Like</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <span>👁️</span>
+                        <h3 id="visibility">-- km</h3>
+                        <p>Visibility</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="forecast-section">
+
+                <h2>5-Day Forecast</h2>
+
+                <div id="forecast" class="forecast"></div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Weather Dashboard • Built with HTML, CSS & JavaScript</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
